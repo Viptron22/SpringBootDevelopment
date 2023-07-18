@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     private Coach myCoach;
+
+    //Constructor injection
     @Autowired
     public DemoController(Coach newCoach)
     {
