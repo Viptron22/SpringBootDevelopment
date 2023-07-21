@@ -19,14 +19,11 @@ public class DemoController {
     //Constructor injection
     //changes in branch
     @Autowired
-    public DemoController(@Qualifier("cricketCoach") Coach newCoach)
-
-    @Autowired
-    public DemoController(Coach newCoach)
-
-    {
+    public DemoController(@Qualifier("cricketCoach") Coach newCoach){
         myCoach=newCoach;
     }
+
+
        @GetMapping("/dailyWorkout")
        public String dailyWorkout()
        {
