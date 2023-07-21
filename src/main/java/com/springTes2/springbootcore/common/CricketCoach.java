@@ -1,5 +1,6 @@
-package com.springTes2.springbootcore;
+package com.springTes2.springbootcore.common;
 
+import com.springTes2.springbootcore.common.Coach;
 import org.springframework.stereotype.Component;
 
 @Component
