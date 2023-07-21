@@ -1,6 +1,8 @@
 package com.springTes2.springbootcore;
 
+import com.springTes2.springbootcore.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +14,7 @@ public class DemoController {
     //Constructor injection
     //changes in branch
     @Autowired
-    public DemoController(Coach newCoach)
+    public DemoController(@Qualifier("cricketCoach") Coach newCoach)
     {
         myCoach=newCoach;
     }
